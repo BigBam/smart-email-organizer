@@ -114,6 +114,29 @@ This script will:
 3. Upgrade pip to the latest version
 4. Install all required dependencies
 
+### Package Configuration (`setup.py`)
+
+The `setup.py` file is used to configure the Python package for distribution and installation. It defines:
+
+- Package metadata (name, version, author, description)
+- Required dependencies
+- Python version compatibility
+- Entry points for command-line usage
+- Package structure and organization
+
+This file enables:
+1. Installation via pip: `pip install .`
+2. Distribution through PyPI (Python Package Index)
+3. Command-line access to the application
+4. Proper dependency management
+
+The current configuration:
+- Supports Python 3.8 and above
+- Includes all necessary dependencies
+- Provides a command-line entry point: `gmail-labeler`
+- Uses MIT License
+- Targets end users/desktop applications
+
 ### Build Scripts
 
 The project includes platform-specific build scripts to create standalone executables:
